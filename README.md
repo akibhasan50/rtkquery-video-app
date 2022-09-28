@@ -13,6 +13,6 @@ Please follow the below instructions to run this branch in your machine:
    ```sh
    npm i
    ```
-6. Your app should be available in http://localhost:3000
+4. Your app should be available in http://localhost:3000
 
 
