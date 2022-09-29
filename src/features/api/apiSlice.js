@@ -17,12 +17,18 @@ export const apiSlice = createApi({
         const tags = title.split(" ");
         const likes = tags.map((tag) => `title_like=${tag}`);
         const queryString = `/videos/?${likes.join("&")}&_limit=4`;
-        console.log(queryString);
         return queryString;
       },
+    }),
+    addVideo: builder.mutation({
+      query: (data) => ({
+        url: `/videos/`,
+        method: 'POST',
+        body:data
+      })
     }),
   }),
 });
 
-export const { useGetVideosQuery, useGetVideoQuery, useGetRelatedVideosQuery } =
+export const { useGetVideosQuery, useGetVideoQuery, useGetRelatedVideosQuery,useAddVideoMutation } =
   apiSlice;

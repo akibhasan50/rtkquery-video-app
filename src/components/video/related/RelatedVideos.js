@@ -10,7 +10,6 @@ export default function RelatedVideos({ id, title }) {
     isError,
   } = useGetRelatedVideosQuery({ id, title });
 
-  console.log(relatedVideos);
   let content = null;
   if (isLoading) {
     content = (
