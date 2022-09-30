@@ -30,5 +30,5 @@ export const apiSlice = createApi({
   }),
 });
 
-export const { useGetVideosQuery, useGetVideoQuery, useGetRelatedVideosQuery,useAddVideoMutation } =
+export const { useGetVideosQuery, useGetVideoQuery, useGetRelatedVideosQuery,useAddVideoMutation  } =
   apiSlice;
