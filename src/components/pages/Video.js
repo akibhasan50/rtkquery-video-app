@@ -1,11 +1,10 @@
 import { useParams } from "react-router-dom";
 import { useGetVideoQuery } from "../../features/api/apiSlice";
+import PlayerLoader from "../ui/loaders/PlayerLoader";
+import RelatedVideoLoader from "../ui/loaders/RelatedVideoLoader";
 import Description from "../video/Description";
 import Player from "../video/Player";
 import RelatedVideos from "../video/related/RelatedVideos";
-import RelatedVideoLoader from "../ui/loaders/RelatedVideoLoader";
-import PlayerLoader from "../ui/loaders/PlayerLoader";
-import DescriptionLoader from "../ui/loaders/DescriptionLoader";
 
 import Error from "../ui/Error";
 export default function Video() {
